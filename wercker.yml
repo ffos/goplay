@@ -69,6 +69,7 @@ build:
     - script:
         name: copy files to wercker output
         code: |
+          echo "Copying to " ${WERCKER_OUTPUT_DIR}
           cp -R ./ ${WERCKER_OUTOUT_DIR} 
 
 deploy:
